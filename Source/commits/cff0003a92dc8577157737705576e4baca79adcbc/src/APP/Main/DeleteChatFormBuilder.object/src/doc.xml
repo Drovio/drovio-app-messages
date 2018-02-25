@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="DeleteChatFormBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1443548169</datecreated>
+      <daterevised>1443548169</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Creates the form that allows the deletion of a Chat.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="FIELD_NAME_CHAT_ID">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_DELETE_IF_EMPTY">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="Form" name="form">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$form" type="Form" defaultvalue="">
+              <description>The Form that is being built by this builder.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildForm" returntype="DeleteChatFormBuilder">
+          <description>Engages the form to the "chat/Delete" view.</description>
+          <parameters/>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatField" returntype="DeleteChatFormBuilder">
+          <description>Adds a hidden field that contains the Chat's ID.</description>
+          <parameters/>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildDeleteChatIfEmptyField" returntype="DeleteChatFormBuilder">
+          <description>Adds a hidden field that indicates if the Chat should be deleted only if it is empty.
+
+A Chat is empty if it contains no messages.</description>
+          <parameters>
+            <parameter name="$value" type="boolean" defaultvalue="">
+              <description>A value of "true" indicates that the Chat should be deleted only if it is empty.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="Form">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

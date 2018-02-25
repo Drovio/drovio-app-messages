@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="UserChatListFormBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1441621837</datecreated>
+      <daterevised>1441621837</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="DOMElement" name="container">
+          <description/>
+        </prop>
+        <prop type="DOMElement" name="list">
+          <description/>
+        </prop>
+        <prop type="Form" name="form">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildContainer" returntype="UserChatListFormBuilder">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildForm" returntype="UserChatListFormBuilder">
+          <description/>
+          <parameters>
+            <parameter name="$form" type="Form" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildItem" returntype="UserChatListFormBuilder">
+          <description/>
+          <parameters>
+            <parameter name="$chatListItem" type="array" defaultvalue="">
+              <description>The format of this array is:
+
+    array(
+      'chat' =&amp;gt; Chat,
+      'lastMessage' =&amp;gt; ChatMessage
+    )</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildList" returntype="UserChatListFormBuilder">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildSelectedChatField" returntype="UserChatListFormBuilder">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="DOMElement">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

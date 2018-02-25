@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="UserChatListFormBuilder" abstract="">
+    <info>
+      <version>3.0</version>
+      <build>2</build>
+      <datecreated>1441621837</datecreated>
+      <daterevised>1443557918</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Creates the list of Chats in which the currently logged-in user is a ChatParticipant.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="AppActionFactory" name="actionFactory">
+          <description/>
+        </prop>
+        <prop type="ChatManager" name="chatManager">
+          <description/>
+        </prop>
+        <prop type="DOMElement" name="container">
+          <description/>
+        </prop>
+        <prop type="Form" name="form">
+          <description/>
+        </prop>
+        <prop type="DOMElement" name="list">
+          <description/>
+        </prop>
+        <prop type="integer" name="userAccountId">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatManager" type="ChatManager" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$userAccountId" type="integer" defaultvalue="">
+              <description>The ID of the currently logged-in user.</description>
+            </parameter>
+            <parameter name="$actionFactory" type="AppActionFactory" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildContainer" returntype="UserChatListFormBuilder">
+          <description>The "Container" is the element that contains the whole "User Chat List".</description>
+          <parameters/>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildForm" returntype="UserChatListFormBuilder">
+          <description>Engages the form to the "chat/Open" view.</description>
+          <parameters>
+            <parameter name="$form" type="Form" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildItem" returntype="UserChatListFormBuilder">
+          <description>Creates an element that holds a single Chat in the "User Chat List".</description>
+          <parameters>
+            <parameter name="$chatListItem" type="array" defaultvalue="">
+              <description>The format of this array is:
+
+    array(
+      'chat' =&amp;gt; Chat,
+      'lastMessage' =&amp;gt; ChatMessage
+    )</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildList" returntype="UserChatListFormBuilder">
+          <description>Creates the element that holds the list of items created by the "builditem" method.</description>
+          <parameters/>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildSelectedChatField" returntype="UserChatListFormBuilder">
+          <description>Adds a hidden field that contains the ID of the Chat that has been selected for opening.</description>
+          <parameters/>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="DOMElement">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getActionView" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The "chat/Open" view path.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChatIdFromChatListItem" returntype="string">
+          <description/>
+          <parameters>
+            <parameter name="$chatListItem" type="array" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="function" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$participant" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="buildButtonContainer" returntype="DOMElement">
+          <description/>
+          <parameters/>
+          <returndescription>An element that contains all the buttons concerning a Chat in the list.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatLastMessageAuthor" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$authorId" type="integer" defaultvalue="">
+              <description>The author's account ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>An element that contains the author of a Chat's last message.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatLastMessageContent" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$content" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>An element that contains the content of a Chat's last message.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatLastMessageCreationTime" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$time" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>An element that contains the creation time of a Chat's last message.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatParticipantsElement" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="string" defaultvalue="">
+              <description>The Chat ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>An element that contains a comma-separated list of a Chat's participants.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatUpdated" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$updated" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildDeleteChatButton" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildItemWith" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$chatListItem" type="array" defaultvalue="">
+              <description>An array containing the Chat and the its last message. The format is:
+
+  array(
+    'chat' =&amp;gt; Chat,
+    'lastMessage' =&amp;gt; ChatMessage
+  )</description>
+            </parameter>
+          </parameters>
+          <returndescription>An element that corresponds to a Chat in the list.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildOpenChatButton" returntype="DOMElement">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

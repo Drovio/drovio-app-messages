@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatManager" abstract="">
+    <info>
+      <version>8.0</version>
+      <build>2</build>
+      <datecreated>1440836598</datecreated>
+      <daterevised>1442755489</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Performs all the CRUD operations of the Messages application.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="DATE_TIME_FORMAT">
+        <description>The format used when storing dates to the database.</description>
+      </const>
+      <const type="string" name="DATE_TIME_LOCAL_FORMAT">
+        <description>The format used when displaying dates to the user.</description>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="DB_DATE_FORMAT" static="true">
+          <description>The format used when retrieving timestamps from the database.</description>
+        </prop>
+        <prop type="string" name="DB_TABLE_CHAT_PARTICIPANTS" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_CHATS" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_MESSAGE_OWNER" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_MESSAGES" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_PENDING_MESSAGES" static="true">
+          <description/>
+        </prop>
+        <prop type="Cache" name="chatParticipantNameCache">
+          <description/>
+        </prop>
+        <prop type="DatabaseConnectionBuilder" name="dbConnBuilder">
+          <description/>
+        </prop>
+        <prop type="" name="idGenerator">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$dbConnBuilder" type="DatabaseConnectionBuilder" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$idGenerator" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="activateChatForParticipant" returntype="void">
+          <description>A chat is active when the participant has opened it.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createMessageCopies" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="ChatMessage" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createNewChat" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$request" type="NewChatRequest" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createNewMessage" returntype="ChatMessage">
+          <description/>
+          <parameters>
+            <parameter name="$request" type="NewChatMessageRequest" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createNewPendingMessage" returntype="void">
+          <description>A message is pending when it can be retrieved at the next "Message Polling Cycle" (MPC).
+
+The MPC is the mechanism used by the client in order to ask at specific time intervals for any new messages in the context of the currently active chat.
+
+So, creating a new pending message is like saying to the MPC that this message should be displayed to the user at the next cycle.
+
+It should be noted that no new message is created. Just a reference to an already created message.
+
+See the "activateChatForParticipant" method for the definition of an active chat.</description>
+          <parameters>
+            <parameter name="$messageId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deactivateAllChatsOfParticipant" returntype="void">
+          <description>See the "activateChatForParticipant" for the definition of an active chat.</description>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deactivateChatForParticipant" returntype="void">
+          <description>See the "activateChatForParticipant" for the definition of an active chat.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deleteChat" returntype="void">
+          <description>Important: Deleting a chat causes the deletion of all its messages, too.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deleteChatForParticipant" returntype="void">
+          <description>Marks a chat as "deleted" for a participant.
+
+This method differs from the "deleteChat" method in that it just marks the chat as "deleted" for a participant instead of deleting it.
+
+Furthermore, it deletes all of this chat messages' copies that have been created for this participant.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deletePendingMessage" returntype="void">
+          <description>See the "createNewPendingMessage" for the definition of a pending message.</description>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChat" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatMessages" returntype="ChatMessage[]">
+          <description>The messages are returned in an ascending order based on their creation time.
+
+The "myUserAccountId" parameter is used for the normalization of the author's name. See the "getNormalizedMessageAuthorName" for more information.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$myUserAccountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatMessagesCopies" returntype="void">
+          <description>The "myUserAccountId" parameter is used for the normalization of the author's name. See the "getNormalizedMessageAuthorName" for more information.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$myUserAccountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatParticipant" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatParticipants" returntype="ChatParticipant[]">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$deleted" type="integer" defaultvalue="">
+              <description>Valid values: 0, 1, -1.
+
+The values are interpreted as follows:
+ - 0 → A participant must not have deleted the chat.
+ - 1 → A participant must have deleted the chat.
+ - -1 → Not interested whether a participant has deleted the chat or not. In other words, all chat participants should be returned.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatParticipantNameFromAccount" returntype="string">
+          <description/>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findLastChatsOfParticipant" returntype="Chat[]">
+          <description>Returns the last "limit" chats of the participant.
+
+For example, if "limit" equals "1", then only the last chat is returned.</description>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$limit" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>An array of the form:
+ array(
+   &amp;lt;chat ID&amp;gt;:integer =&amp;gt; array(
+     'chat' =&amp;gt; Chat,
+     'lastMessage' =&amp;gt; ChatMessage
+   )
+ )</returndescription>
+          <throws/>
+          <deprecated>Use the "findLastChatsOfParticipantForTeam" method instead.</deprecated>
+        </method>
+        <method name="findLastChatsOfParticipantForTeam" returntype="array">
+          <description>Returns the last "limit" chats of the participant that belong to a particular team.
+
+For example, if "limit" equals "1", then only the last chat is returned.</description>
+          <parameters>
+            <parameter name="$teamId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$limit" type="integer" defaultvalue="">
+              <description>Valid values:
+ - -1 → No limit. All chats are returned.
+ - &amp;gt;= 0 → This amount of chats when sorted in descending order based on the creation time.</description>
+            </parameter>
+          </parameters>
+          <returndescription>An array of the form:
+ array(
+   &amp;amp;lt;chat ID&amp;amp;gt;:integer =&amp;amp;gt; array(
+     'chat' =&amp;amp;gt; Chat,
+     'lastMessage' =&amp;amp;gt; ChatMessage
+   )
+ )</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="deletePendingMessagesOfChatParticipant" returntype="void">
+          <description>See the "createNewPendingMessage" for the definition of a pending message.</description>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findPendingMessagesOfChatParticipant" returntype="PendingMessage[]">
+          <description>See the "createNewPendingMessage" for the definition of a pending message.</description>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>A PendingMessage array where the keys are the IDs of the messages.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="setChatActiveForParticipant" returntype="void">
+          <description>See the "activateChatForParticipant" for the definition of an active chat.</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$active" type="integer" defaultvalue="">
+              <description>Valid values:
+ - 0 → marks the chat as inactive.
+ - 1 → marks the chat as active.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="undeleteChat" returntype="void">
+          <description>See the "deleteChatForParticipant" for the definition of the "deleted for a participant chat".</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="deleteChatMessageCopiesForParticipant" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="executeQuery" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$query" type="" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$attributes" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getNormalizedMessageAuthorName" returntype="string">
+          <description>The "normalized" version of a message author's name is created via the following logic:
+ - If the author is the user currently logged in, then the literal "util_me" of the "chat" scope is returned.
+ - In any other case, the author's name is the profile name of the user with ID equal to "authorId".
+
+This value is useful for places where the author of a message is displayed and that author is the current user. So, for example, if the current user's name is "John Doe", he would see a label such as "Me" next to his messages. That is more user-friendly than seeing his own name.</description>
+          <parameters>
+            <parameter name="$authorId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$myUserAccountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>The literal "chat/util_me" or the profile name of the user with id "authorId".</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMyMessage" returntype="boolean">
+          <description>Checks if the author of a message is the current user.
+
+The check was refactored into a method for maintenance reasons. Since this is a check performed in multiple places, should the check requires change it will have to be changed in only one place.</description>
+          <parameters>
+            <parameter name="$messageAuthorId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$myUserAccountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>Returns "true" if the two IDs are equal.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="saveParticipantsOfNewChat" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="Chat" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="setChatDeletedForParticipant" returntype="void">
+          <description>See the "deleteChatForParticipant" for the definition of a "deleted for a participant chat".</description>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$deleted" type="integer" defaultvalue="">
+              <description>Valid values:
+ - 0 → marks the chat as not deleted.
+ - 1 → marks the chat as deleted.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="setUpMessagesDbResult" returntype="ChatMessage[]">
+          <description/>
+          <parameters>
+            <parameter name="$results" type="array" defaultvalue="">
+              <description>An array of the form:
+ array(
+   'author_id' =&amp;gt; integer,
+   'id' =&amp;gt; integer,
+   'chat_id' =&amp;gt; integer,
+   'created_at' =&amp;gt; string,
+   'content' =&amp;gt; string
+ )</description>
+            </parameter>
+            <parameter name="$myUserAccountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="updateChatLastMessageId" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$lastMessageId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

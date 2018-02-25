@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="PendingMessage" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1441802957</datecreated>
+      <daterevised>1441802957</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>A ChatMessage that needs to be delivered to a ChatParticipant at the next poll cycle.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="id">
+          <description/>
+        </prop>
+        <prop type="integer" name="message">
+          <description/>
+        </prop>
+        <prop type="integer" name="participant">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="PendingMessage" static="true">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$participant" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="PendingMessage" static="true">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getMessage" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getParticipant" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withMessage" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withParticipant" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$participant" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

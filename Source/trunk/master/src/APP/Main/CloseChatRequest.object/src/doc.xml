@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="CloseChatRequest" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1443547705</datecreated>
+      <daterevised>1443547705</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a request for closing a Chat.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="KEY_COMPLETE_CLOSE">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_CHAT_ID">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="chatId">
+          <description/>
+        </prop>
+        <prop type="boolean" name="completeClose">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="fromEngine" returntype="CloseChatRequest" static="true">
+          <description>Creates a new CloseChatRequest with data retrieved from the "engine".</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$completeClose" type="boolean" defaultvalue="">
+              <description>A value of "true" indicates that the message input box should be removed along with the chat from the front-end.</description>
+            </parameter>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description>The ID of the Chat to be closed.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChatId" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the Chat to be closed.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isCompleteClose" returntype="boolean">
+          <description/>
+          <parameters/>
+          <returndescription>See the constructor for the definition of a "completely closed" chat.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

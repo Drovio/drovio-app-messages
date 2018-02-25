@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="DeleteChatRequest" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1443548366</datecreated>
+      <daterevised>1443548366</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a request for deleting a Chat.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="chatId">
+          <description/>
+        </prop>
+        <prop type="boolean" name="deleteIfEmpty">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="fromEngine" returntype="DeleteChatRequest" static="true">
+          <description>Creates a new DeleteChatRequest with data retrieved from the "engine".</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description>The ID of the Chat to be deleted.</description>
+            </parameter>
+            <parameter name="$deleteIfEmpty" type="boolean" defaultvalue="">
+              <description>A value of "true" indicates that the Chat should be deleted only if it is empty.
+
+See the DeleteChatFormBuilder::buildDeleteChatIfEmptyField method for the definition of an empty Chat.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChatId" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the Chat to be deleted.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isDeleteIfEmpty" returntype="boolean">
+          <description/>
+          <parameters/>
+          <returndescription>A value of "true" indicates that the Chat should be deleted only if it is empty.
+
+See the DeleteChatFormBuilder::buildDeleteChatIfEmptyField method for the definition of an empty Chat.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

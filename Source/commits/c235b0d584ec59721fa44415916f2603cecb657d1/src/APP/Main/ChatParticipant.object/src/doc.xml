@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatParticipant" abstract="">
+    <info>
+      <version>2.0</version>
+      <build>1</build>
+      <datecreated>1440838623</datecreated>
+      <daterevised>1441040593</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="Chat" name="chat">
+          <description/>
+        </prop>
+        <prop type="integer" name="id">
+          <description/>
+        </prop>
+        <prop type="string" name="name">
+          <description/>
+        </prop>
+        <prop type="ChatParticipantTeam[]" name="teams">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$team" type="ChatParticipantTeam" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChat" returntype="Chat">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getName" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeams" returntype="ChatParticipantTeam[]">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMemberOf" returntype="boolean">
+          <description/>
+          <parameters>
+            <parameter name="$team" type="ChatParticipantTeam" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="setChat" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="Chat" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

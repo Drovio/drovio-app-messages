@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatParticipant" abstract="">
+    <info>
+      <version>5.0</version>
+      <build>3</build>
+      <datecreated>1440838623</datecreated>
+      <daterevised>1442605975</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="accountId">
+          <description/>
+        </prop>
+        <prop type="integer" name="chat">
+          <description/>
+        </prop>
+        <prop type="integer" name="id">
+          <description/>
+        </prop>
+        <prop type="string" name="name">
+          <description/>
+        </prop>
+        <prop type="integer" name="teams">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="ChatParticipant" static="true">
+          <description>Creates a new ChatParticipant were all of its required fields are set.</description>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$team" type="integer" defaultvalue="">
+              <description>The ID of the team this participant belongs to.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="ChatParticipant" static="true">
+          <description>Creates a new ChatParticipant were only its id is set.</description>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAccountId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChat" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The owning Chat's ID.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getName" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getFirstTeam" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the first team this participant belongs to.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeams" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The IDs of the teams this participant belongs to.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMemberOf" returntype="boolean">
+          <description/>
+          <parameters>
+            <parameter name="$team" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>"true" if this participant belongs to the given team.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAccountId" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withChat" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withName" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withTeams" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$teams" type="integer" defaultvalue="">
+              <description>The IDs of the teams this participant belongs to.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="PendingMessage" abstract="">
+    <info>
+      <version>1.0</version>
+      <build>2</build>
+      <datecreated>1441802957</datecreated>
+      <daterevised>1443555550</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>A ChatMessage that needs to be delivered to a ChatParticipant at the next Polling Cycle.</title>
+      <description>Message Polling Mechanism
+
+The Polling Cycle is part of the Message Polling Mechanism. This mechanism refers to the process utilized by the system in order to allow the live interaction among the ChatParticipants.
+
+It is divided into two parts:
+
+ 1. the creation and
+ 2. the delivery
+
+of PendingMessages.
+
+The creation process is the following:
+
+ 1. The user creates a new ChatMessage.
+ 2. The system saves the ChatMessage and creates PendingMessages for each ChatParticipant including the ChatMessage's author. These PendingMessages are references to the original ChatMessage.
+
+The delivery process comes after the creation and includes the following steps:
+
+ 1. The client asks the server for any PendingMessages that should be delivered to the ChatParticipant.
+ 2. The server returns these PendingMessages to the client.
+ 3. The client presents the PendingMessages and sets up a reminder to ask again after a particular time period has passed (for example, 5 seconds).
+
+Steps 1 through 3 above comprise the Polling Cycle.
+
+
+Referenced Message
+
+Some of the methods of this class return information that is available in the ChatMessage class, but, nonetheless, presented here. That is for ease of reference purposes. The "getAuthor" method is an example of such a method.
+
+In order to simplify the documentation of these methods, we will refer to the ChatMessage that this PendingMessage refers to as the "Referenced Message".
+
+
+Setter Methods Naming Convention
+
+See the "Setter Methods Naming Convention" note in the Chat class description.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="author">
+          <description>The author's ID.</description>
+        </prop>
+        <prop type="string" name="authorAvatar">
+          <description>The URL of the author's avatar.</description>
+        </prop>
+        <prop type="string" name="authorName">
+          <description/>
+        </prop>
+        <prop type="string" name="content">
+          <description/>
+        </prop>
+        <prop type="string" name="createdAt">
+          <description/>
+        </prop>
+        <prop type="integer" name="id">
+          <description/>
+        </prop>
+        <prop type="string" name="message">
+          <description>The ID of the ChatMessage this PendingMessage refers to.</description>
+        </prop>
+        <prop type="boolean" name="mine">
+          <description/>
+        </prop>
+        <prop type="integer" name="participant">
+          <description>The ChatParticipant's account ID.</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="PendingMessage" static="true">
+          <description>Creates a new PendingMessage were all of its required fields are set.</description>
+          <parameters>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description>The ID of the ChatMessage this PendingMessage refers to.</description>
+            </parameter>
+            <parameter name="$participant" type="integer" defaultvalue="">
+              <description>The ChatParticipant's account ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="PendingMessage" static="true">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated>Use newWithAll instead.</deprecated>
+        </method>
+        <method name="getAuthor" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The Referenced Message author's ID.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthorAvatar" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The URL of the Referenced Message author's avatar.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthorName" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The Referenced Message author's name.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getContent" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The Referenced Message's content.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getCreatedAt" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The Referenced Message's creation time.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated>The ID field is no longer used. A composite primary key is used instead.</deprecated>
+        </method>
+        <method name="getMessage" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The Referenced Message's ID.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getParticipant" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The account ID of the ChatParticipant this PendingMessage was created for.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMine" returntype="boolean">
+          <description/>
+          <parameters/>
+          <returndescription>Returns the "mine" state of the Referenced Message.
+
+See the ChatMessage::isMine method.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthor" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description>The Referenced Message author's ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthorAvatar" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$avatar" type="string" defaultvalue="">
+              <description>The URL of the Referenced Message author's avatar.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthorName" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description>The Referenced Message author's name.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withContent" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$content" type="string" defaultvalue="">
+              <description>The Referenced Message's content.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withCreatedAt" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$createdAt" type="string" defaultvalue="">
+              <description>The Referenced Message's creation time.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated>See the "getId" method.</deprecated>
+        </method>
+        <method name="withMessage" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description>The Referenced Message's ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withMine" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$mine" type="boolean" defaultvalue="">
+              <description>Returns the "mine" state of the Referenced Message.
+
+See the ChatMessage::isMine method.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withParticipant" returntype="PendingMessage">
+          <description/>
+          <parameters>
+            <parameter name="$participant" type="integer" defaultvalue="">
+              <description>The account ID of the ChatParticipant this PendingMessage was created for.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="toArray" returntype="array">
+          <description/>
+          <parameters/>
+          <returndescription>The array representation of this PendingMessage. The form of the array is the same as the ChatMessage::toArray with the addition of the following two keys:
+
+ - 'message' =&amp;gt; &amp;lt;the Referenced Message's ID&amp;gt; : string
+ - 'participant' =&amp;gt; &amp;lt;the account ID of the ChatParticipant this PendingMessage was created for&amp;gt; : integer</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

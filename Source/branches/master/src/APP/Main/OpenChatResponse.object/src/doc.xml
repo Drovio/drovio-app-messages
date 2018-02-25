@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="OpenChatResponse" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1443551194</datecreated>
+      <daterevised>1443551194</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents the response generated after a request for opening a Chat has been processed.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="KEY_CHAT_ID">
+        <description/>
+      </const>
+      <const type="string" name="KEY_MESSAGES">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="array" name="content">
+          <description/>
+        </prop>
+        <prop type="integer" name="userAccountId">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$userAccountId" type="integer" defaultvalue="">
+              <description>The ID of the currently logged-in user.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChat" returntype="OpenChatResponse">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildMessages" returntype="OpenChatResponse">
+          <description/>
+          <parameters>
+            <parameter name="$messages" type="array" defaultvalue="">
+              <description>The messages to be presented to the user right after the Chat is opened.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="toArray" returntype="array">
+          <description/>
+          <parameters/>
+          <returndescription>The array representation of this response. The array  format is as follows:
+
+  array(
+    KEY_MESSAGES =&amp;amp;gt; &amp;lt;an array of ChatMessage::toArray return values&amp;gt;
+  )</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

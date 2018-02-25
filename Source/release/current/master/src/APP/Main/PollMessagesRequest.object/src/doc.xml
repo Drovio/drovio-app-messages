@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="PollMessagesRequest" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1443556000</datecreated>
+      <daterevised>1443556000</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a request for message polling.</title>
+      <description>See the PendingMessage class description for the definition of the Message Polling Mechanism.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="chatId">
+          <description/>
+        </prop>
+        <prop type="integer" name="participantId">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="fromEngine" returntype="PollMessagesRequest" static="true">
+          <description>Creates a new PollMessagesRequest with data retrieved from the "engine".</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description>The account ID of the ChatParticipant the polling occurs for.</description>
+            </parameter>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description>The ID of the Chat the polling occurs for.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChatId" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the Chat the polling occurs for.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getParticipantId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The account ID of the ChatParticipant the polling occurs for.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

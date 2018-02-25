@@ -1,0 +1,427 @@
+/* ***
+ * Colors
+ * *** */
+$color-1: #3ED8F3;
+$color-2: #333;
+$color-3: #ccc;
+$color-4: #fff;
+$color-5: #eee;
+$color-6: #999;
+$color-7: #aaa;
+$color-8: #51ace0;
+$color-9: #0090E2;
+
+/* ***
+ * Layout
+ * *** */
+$diomsg-toolbar-height: 30px;
+$diomsg-chat-message-input-box-height: 3em;
+$diomsg-chat-message-input-box-padding: 32px;
+
+/* ***
+ * Page Layout
+ * *** */
+.diomsg-app-content {
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.diomsg-column {
+  float: left;
+}
+
+.diomsg-main-container {
+  height: 100%;
+  width: 75%;
+}
+
+.diomsg-sidebar-container {
+  height: 100%;
+  width: 25%;
+}
+
+.diomsg-toolbar {
+  border-bottom: 1px solid $color-3;
+  overflow: hidden;
+}
+
+/* ***
+ * Toolbar
+ * *** */
+.diomsg-toolbar-actions-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-action {
+  float: left;
+}
+
+.diomsg-chat-button {
+  border: 1px solid transparent;
+  display: block;
+  transition: all .2s ease-in-out;
+  
+  &:hover {
+    background: $color-4;
+    border-color: $color-3;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+/* ***
+ * New Chat Dialog
+ * *** */
+#diomsg-contact-selection-dialog .formBody {
+  padding: 4px;
+}
+
+/* ***
+ * Chat
+ * *** */
+#diomsg-new-message-form .formBody {
+  padding: 0 12px 0 0;
+}
+
+.diomsg-chat-container {
+  height: 100%;
+  margin: 0 0 12px;
+  overflow: auto;
+}
+
+/**
+ * Height
+ *
+ * The last "12px" subtracted from the height of this container are just for a bottom
+ * margin.
+ */
+.diomsg-chat-list-container {
+  height: 90%;
+  height: calc(100% - $diomsg-chat-message-input-box-height - $diomsg-toolbar-height - $diomsg-chat-message-input-box-padding - 12px);
+  overflow: auto;
+}
+
+.diomsg-message-input-field {
+  border: 1px solid $color-3;
+  box-sizing: border-box;
+  float: left;
+//  margin: 0 10px 0 0;
+  min-height: 3em;
+  overflow: hidden;
+  resize: none;
+  width: 85%;
+}
+
+.diomsg-chat-message-list {
+  overflow: hidden;
+}
+
+.diomsg-chat-message-list-container{
+  background: $color-4;
+  height: 100%;
+  overflow: auto;
+}
+
+.diomsg-message-container {
+  background: $color-4;
+  border-bottom: 1px solid $color-3;
+  color: $color-1;
+//  margin: 0 4px 10px;
+  overflow: hidden;
+  padding: 4px;
+
+  &:first-child {
+    margin-top: 4px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.diomsg-message-not-mine {
+    background: $color-1;
+  }
+}
+
+.diomsg-message-author {
+  box-sizing: border-box;
+//  color: #ccc;
+  display: block;
+  font-size: 1.2em;
+  padding: 4px;
+
+  .diomsg-message-not-mine & {
+    color: $color-4;
+  }
+}
+
+.diomsg-chat-message-author-avatar {
+  height: auto;
+  margin: 4px 4px 0 0;
+  max-width: 16px;
+}
+
+.diomsg-message {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $color-2;
+  display: block;
+  margin: 0;
+  padding: 4px;
+
+  .diomsg-message-not-mine & {
+    color: $color-4;
+  }
+}
+
+.diomsg-message-created-at {
+  color: $color-3;
+  float: right;
+  font-size: .85em;
+  font-style: italic;
+}
+
+.diomsg-chat-message-input-box-content-container {
+  padding: 16px 0;
+}
+
+#diomsg-send-chat-message-button {
+  background: $color-8;
+  border: 1px solid $color-9;
+  box-sizing: border-box;
+  color: $color-4;
+  float: left;
+  font-size: 1.4em;
+  height: 2.5em;
+  margin: 0 0 0 4px;
+  padding: 4px 0;
+  transition: all .2s;
+  width: 10%;
+
+  &:hover {
+    background: #6FB7E0;
+//    border: 1px solid $color-3;
+//    color: $color-8;
+  }
+}
+
+/* ***
+ * User Chat List
+ * *** */
+.diomsg-user-chat {
+  background: $color-4;
+//  border-right: 4px solid transparent;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2px;
+  overflow: hidden;
+  padding: 4px;
+
+  &.active {
+    background: #e9eaed;
+    border-right: 4px solid $color-3;
+  }
+
+  &:hover {
+    background: $color-5;
+    background: rgba(240, 240, 240, .9);
+    border: 1px solid #$color-1;
+    color: $color-6;
+    cursor: pointer;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.diomsg-user-chat-list-bm-container {
+  border-top: 1px solid $color-3;
+  margin: 4px 0 0;
+  overflow: hidden;
+}
+
+.diomsg-user-chat-list-button-container {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  padding: 4px;
+  width: 20%;
+}
+
+.diomsg-user-chat-list-button {
+  display: block;
+  width: 28px;
+}
+
+.diomsg-user-chat-list-item-container {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  color: $color-3;
+  float: left;
+  overflow: hidden;
+  padding: 4px;
+  transition: background-color .2s ease-out;
+  width: 80%;
+
+//  &:hover {
+//    background: $color-5;
+//    background: rgba(240, 240, 240, .9);
+//    border: 1px solid #$color-1;
+//    color: $color-6;
+//    cursor: pointer;
+//  }
+}
+
+.diomsg-user-chat-list-item-message-author {
+  font-size: .9em;
+
+  .active & {
+    font-weight: bold;
+  }
+}
+
+//.diomsg-user-chat-list-item-message-content {
+//  border: 1px solid rgba(0, 0, 0, .18);
+//  border-radius: 4px;
+//  color: $color-2;
+//  padding: 8px;
+//
+//  .active & {
+//    background: #fff;
+//    color: $color-2;
+//  }
+//}
+
+.diomsg-user-chat-list-item-message-created-at {
+  color: $color-3;
+  float: right;
+  font-size: .9em;
+  font-style: italic;
+
+  .active & {
+    font-weight: bold;
+  }
+}
+
+.diomsg-user-chat-list-chat-updated {
+  background: rgba(240, 240, 240, .8);
+  color: $color-5;
+  overflow: hidden;
+  padding: 8px 4px 4px;
+}
+
+.diomsg-user-chat-list-participants-list {
+  color: $color-7;
+  font-size: .9em;
+  font-style: italic;
+}
+
+[id^="diomsg-user-chat-list-delete-chat-button"] {
+  border: 1px solid transparent;
+  display: block;
+  padding: 0;
+  transition: all .2s ease-in-out;
+
+  &.positive {
+    background: none;
+    border: 1px solid transparent;
+  }
+  
+  &:hover,
+  &.positive:hover {
+    background: $color-5;
+    border-color: $color-3;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+/* ***
+ * Forms
+ * *** */
+.diomsg-form-field {
+//  margin: 4px;
+}
+
+.diomsg-form-label {
+  display: block;
+  font-size: 1.2em;
+  margin: 12px 4px 0;
+}
+
+/* ***
+ * Icons
+ * *** */
+.icon {
+  background: url('%{media}/.assets/devIcons.svg') no-repeat center transparent;
+  background-size: cover;
+  display: block;
+  height: 16px;
+  margin: 6px;
+  width: 16px;
+}
+
+.icon-plus {
+  background-position: 0px -64px;
+}
+
+.icon-refresh {
+  background-position: 0px -48px;
+}
+
+.icon-trash {
+  background-position: 0px -32px;
+}
+
+.diomsg-avatar-icon {
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+
+.diomsg-avatar-empty {
+  background-image: url('//lib.drov.io/re74dadfe3ac5262d28e196809eaec395.red/f0b34bc25e096aef8de05f35dcdec095/resources/global/profile.svg');
+  background-size: 22px;
+}
+
+/* ***
+ * Utilities
+ * *** */
+.diomsg-util-clearfix {
+  overflow: hidden;
+}
+
+.diomsg-util-FlL {
+  float: left;
+}
+
+.diomsg-util-FlR {
+  float: right;
+}
+
+.diomsg-util-FlN {
+  float: none;
+}
+
+.diomsg-util-DsIn {
+  display: inline;
+}
+
+.diomsg-util-DsN {
+  display: none;
+}
+
+.diomsg-util-MarTBN {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ***
+ * DrovIO Overrides
+ * *** */
+#applicationContainer.applicationTester {
+  overflow: hidden;
+}

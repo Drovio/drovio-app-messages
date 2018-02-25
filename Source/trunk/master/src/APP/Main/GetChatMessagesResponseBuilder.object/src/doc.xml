@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="GetChatMessagesResponseBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>2</build>
+      <datecreated>1443548735</datecreated>
+      <daterevised>1443548761</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated>A polling mechanism is used in place of simple GET requests.</deprecated>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="" name="authorNameList">
+          <description/>
+        </prop>
+        <prop type="" name="chatManager">
+          <description/>
+        </prop>
+        <prop type="" name="list">
+          <description/>
+        </prop>
+        <prop type="" name="userAccountId">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatManager" type="" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$userAccountId" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatMessageList" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildChatMessage" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="getAuthorName" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$authorId" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatManager" abstract="">
+    <info>
+      <version>3.0</version>
+      <build>3</build>
+      <datecreated>1440836598</datecreated>
+      <daterevised>1441619889</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Performs CRUD operations about chats.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="" name="DATE_TIME_FORMAT">
+        <description/>
+      </const>
+      <const type="" name="DATE_TIME_LOCAL_FORMAT">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="engine" name="DB_TABLE_CHAT_PARTICIPANTS" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_CHATS" static="true">
+          <description/>
+        </prop>
+        <prop type="string" name="DB_TABLE_MESSAGES" static="true">
+          <description/>
+        </prop>
+        <prop type="DatabaseConnectionBuilder" name="dbConnBuilder">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$dbConnBuilder" type="DatabaseConnectionBuilder" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createNewChat" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$request" type="NewChatRequest" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="createNewMessage" returntype="ChatMessage">
+          <description/>
+          <parameters>
+            <parameter name="$request" type="NewChatMessageRequest" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChat" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findChatParticipant" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="findLastChatsOfParticipant" returntype="Chat[]">
+          <description/>
+          <parameters>
+            <parameter name="$participantId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$limit" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="findChatParticipantNameFromAccount" returntype="string">
+          <description/>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="saveParticipantsOfNewChat" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="Chat" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="updateChatLastMessageTime" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$lastMessageId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatMessage" abstract="">
+    <info>
+      <version>8.0</version>
+      <build>1</build>
+      <datecreated>1440837208</datecreated>
+      <daterevised>1443546332</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a message belonging to a Chat.</title>
+      <description>See the "Setter Methods Naming Convention" note in the Chat class description.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="author">
+          <description>The author's ID.</description>
+        </prop>
+        <prop type="string" name="authorAvatar">
+          <description>The URL of the author's avatar.</description>
+        </prop>
+        <prop type="string" name="authorName">
+          <description/>
+        </prop>
+        <prop type="string" name="chat">
+          <description>The ID of the Chat this message belongs to.</description>
+        </prop>
+        <prop type="string" name="content">
+          <description/>
+        </prop>
+        <prop type="string" name="createdAt">
+          <description/>
+        </prop>
+        <prop type="string" name="id">
+          <description/>
+        </prop>
+        <prop type="boolean" name="mine">
+          <description>"true" if this message belongs to the currently logged-in user.</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="ChatMessage" static="true">
+          <description>Creates a new ChatMessage were all of its required fields are set.</description>
+          <parameters>
+            <parameter name="$chat" type="string" defaultvalue="">
+              <description>The ID of the Chat this message belongs to.</description>
+            </parameter>
+            <parameter name="$author" type="integer" defaultvalue="">
+              <description>The author's ID.</description>
+            </parameter>
+            <parameter name="$content" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="ChatMessage" static="true">
+          <description>Creates a new ChatMessage were only its ID is set.</description>
+          <parameters>
+            <parameter name="$id" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthor" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The author's ID.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthorAvatar" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The URL of the author's avatar.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAuthorName" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChat" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of this message's Chat.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getCreatedAt" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getContent" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMine" returntype="boolean">
+          <description/>
+          <parameters/>
+          <returndescription>"true" if the message belongs to the currently logged-in user.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="toArray" returntype="array">
+          <description/>
+          <parameters/>
+          <returndescription>The array representation of this ChatMessage. The form of the array is:
+ array(
+   'author' =&amp;amp;gt; author's ID : integer,
+   'author_avatar' =&amp;amp;gt; author avatar's URL : string,
+   'author_name' =&amp;amp;gt; string,
+   'content' =&amp;amp;gt; string,
+   'created_at' =&amp;amp;gt; string,
+   'id' =&amp;amp;gt; integer,
+   'mine' =&amp;amp;gt; boolean
+ )</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthor" returntype="ChatMessage">
+          <description>Initializes the author's ID.</description>
+          <parameters>
+            <parameter name="$author" type="integer" defaultvalue="">
+              <description>The author's ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthorAvatar" returntype="ChatMessage">
+          <description>Initializes the author avatar's URL.</description>
+          <parameters>
+            <parameter name="$avatar" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAuthorName" returntype="ChatMessage">
+          <description>Initializes the author's name.</description>
+          <parameters>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withChat" returntype="ChatMessage">
+          <description>Initializes the Chat's ID.</description>
+          <parameters>
+            <parameter name="$chat" type="string" defaultvalue="">
+              <description>The chat's ID.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withContent" returntype="ChatMessage">
+          <description>Initializes the message's content.</description>
+          <parameters>
+            <parameter name="$content" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withCreatedAt" returntype="ChatMessage">
+          <description>Initializes the message's creation time.</description>
+          <parameters>
+            <parameter name="$time" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="ChatMessage">
+          <description>Initializes the message's ID.</description>
+          <parameters>
+            <parameter name="$id" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withMine" returntype="ChatMessage">
+          <description>Initializes the message's "mine" state.
+
+See method "isMine".</description>
+          <parameters>
+            <parameter name="$mine" type="boolean" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

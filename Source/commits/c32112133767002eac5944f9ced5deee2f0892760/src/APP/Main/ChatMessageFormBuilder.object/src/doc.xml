@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatMessageFormBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>3</build>
+      <datecreated>1442605679</datecreated>
+      <daterevised>1443557538</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Creates the form that allows the creation of new ChatMessages.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="FIELD_NAME_AUTHOR_ID">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_CHAT_ID">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_FIRST_MESSAGE">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_MESSAGE">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="authorId">
+          <description/>
+        </prop>
+        <prop type="Chat" name="chat">
+          <description/>
+        </prop>
+        <prop type="Form" name="form">
+          <description/>
+        </prop>
+        <prop type="ChatMessage" name="message">
+          <description/>
+        </prop>
+        <prop type="DOMElement" name="sendButton">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$form" type="Form" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildFirstMessage" returntype="void">
+          <description>The "First Message Field" is a hidden input whose value indicates whether this is the first message of the chat or not.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildForm" returntype="void">
+          <description>Engages the form to the "chat/NewMessage" view.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildLoggedInUserAsAuthor" returntype="void">
+          <description>Sets the currently logged-in user as the author of the message this builder's form will create.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildSendButton" returntype="void">
+          <description>Sets the text of the form's submit button to the "chat.button_send_chat_message" literal.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="Form">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withChat" returntype="ChatMessageFormBuilder">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withMessage" returntype="ChatMessageFormBuilder">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

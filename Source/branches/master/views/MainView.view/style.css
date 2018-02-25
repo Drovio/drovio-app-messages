@@ -1,0 +1,418 @@
+/* ***
+ * Colors
+ * *** */
+
+/* ***
+ * Layout
+ * *** */
+
+/* ***
+ * Page Layout
+ * *** */
+.diomsg-app-content {
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.diomsg-column {
+  float: left;
+}
+
+.diomsg-main-container {
+  height: 100%;
+  width: 75%;
+}
+
+.diomsg-sidebar-container {
+  height: 100%;
+  width: 25%;
+}
+
+.diomsg-toolbar {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+/* ***
+ * Toolbar
+ * *** */
+.diomsg-toolbar-actions-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-action {
+  float: left;
+}
+
+.diomsg-chat-button  {
+  border: 1px solid transparent;
+  display: block;
+  transition: all .2s ease-in-out
+}
+.diomsg-chat-button:hover {
+background: #fff;
+border-color: #ccc;
+border-radius: 3px;
+cursor: pointer;
+}
+
+/* ***
+ * New Chat Dialog
+ * *** */
+#diomsg-contact-selection-dialog .formBody {
+  padding: 4px;
+}
+
+/* ***
+ * Chat
+ * *** */
+#diomsg-new-message-form .formBody {
+  padding: 0 12px 0 0;
+}
+
+.diomsg-chat-container {
+  height: 100%;
+  margin: 0 0 12px;
+  overflow: auto;
+}
+
+/**
+ * Height
+ *
+ * The last "12px" subtracted from the height of this container are just for a bottom
+ * margin.
+ */
+.diomsg-chat-list-container {
+  height: 90%;
+  height: calc(100% - 3em - 30px - 32px - 12px);
+  overflow: auto;
+}
+
+.diomsg-message-input-field {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+//  margin: 0 10px 0 0;
+  min-height: 3em;
+  overflow: hidden;
+  resize: none;
+  width: 85%;
+}
+
+.diomsg-chat-message-list {
+  overflow: hidden;
+}
+
+.diomsg-chat-message-list-container{
+  background: #fff;
+  height: 100%;
+  overflow: auto;
+}
+
+.diomsg-message-container  {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #3ED8F3;
+//  margin: 0 4px 10px;
+  overflow: hidden;
+  padding: 4px
+}
+.diomsg-message-container:first-child {
+margin-top: 4px;
+}
+
+.diomsg-message-container:last-child {
+margin-bottom: 0;
+}
+
+.diomsg-message-container.diomsg-message-not-mine {
+background: #3ED8F3;
+}
+
+.diomsg-message-author  {
+  box-sizing: border-box;
+//  color: #ccc;
+  display: block;
+  font-size: 1.2em;
+  padding: 4px
+}
+.diomsg-message-not-mine .diomsg-message-author {
+color: #fff;
+}
+
+.diomsg-chat-message-author-avatar {
+  height: auto;
+  margin: 4px 4px 0 0;
+//  max-width: 16px;
+}
+
+.diomsg-message  {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+  display: block;
+  margin: 0;
+  padding: 4px
+}
+.diomsg-message-not-mine .diomsg-message {
+color: #fff;
+}
+
+.diomsg-message-created-at {
+  color: #ccc;
+  float: right;
+  font-size: .85em;
+  font-style: italic;
+}
+
+.diomsg-chat-message-input-box-content-container {
+  padding: 16px 0;
+}
+
+#diomsg-send-chat-message-button  {
+  background: #51ace0;
+  border: 1px solid #0090E2;
+  box-sizing: border-box;
+  color: #fff;
+  float: left;
+  font-size: 1.4em;
+  height: 2.5em;
+  margin: 0 0 0 4px;
+  padding: 4px 0;
+  transition: all .2s;
+  width: 10%
+}
+#diomsg-send-chat-message-button:hover {
+background: #6FB7E0;
+//    border: 1px solid #ccc;
+//    color: #51ace0;
+}
+
+/* ***
+ * User Chat List
+ * *** */
+.diomsg-user-chat  {
+  background: #fff;
+//  border-right: 4px solid transparent;
+  border-bottom: 1px solid #ccc;
+  color: #aaa;
+  margin-bottom: 2px;
+  overflow: hidden;
+  padding: 4px
+}
+/* ***
+ * User Chat List
+ * *** */
+.diomsg-user-chat.active {
+background: #e9eaed;
+border-right: 4px solid #ccc;
+color: #999;
+}
+
+/* ***
+ * User Chat List
+ * *** */
+.diomsg-user-chat:hover {
+background: #eee;
+background: rgba(240, 240, 240, .9);
+//    border: 1px solid #3ED8F3;
+color: #999;
+cursor: pointer;
+}
+
+/* ***
+ * User Chat List
+ * *** */
+.diomsg-user-chat:last-child {
+margin-bottom: 0;
+}
+
+.diomsg-user-chat-list-bm-container {
+  border-top: 1px solid #ccc;
+  font-size: .9em;
+  margin: 4px 0 0;
+  overflow: hidden;
+}
+
+.diomsg-user-chat-list-button-container {
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  padding: 4px;
+  width: 20%;
+}
+
+.diomsg-user-chat-list-button {
+  display: block;
+  width: 28px;
+}
+
+.diomsg-user-chat-list-item-container  {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+//  color: #ccc;
+  float: left;
+  overflow: hidden;
+//  padding: 4px;
+  transition: background-color .2s ease-out;
+  width: 80%
+}
+//  .diomsg-user-chat-list-item-container:hover {
+//    background: #eee;
+//    background: rgba(240, 240, 240, .9);
+//    border: 1px solid ##3ED8F3;
+//    color: #999;
+//    cursor: pointer;
+//  }
+
+//.diomsg-user-chat-list-item-message-author {
+//  font-size: 1.3em;
+//
+// .active & {
+//    font-weight: bold;
+//  }
+//}
+
+//.diomsg-user-chat-list-item-message-content {
+//  border: 1px solid rgba(0, 0, 0, .18);
+//  border-radius: 4px;
+//  color: #333;
+//  padding: 8px;
+//
+//  .active & {
+//    background: #fff;
+//    color: #333;
+//  }
+//}
+
+.diomsg-user-chat-list-item-message-created-at  {
+//  color: #ccc;
+  float: right;
+  font-size: .9em;
+  font-style: italic
+}
+//  .active .diomsg-user-chat-list-item-message-created-at {
+//    font-weight: bold;
+//  }
+
+.diomsg-user-chat-list-chat-updated {
+  background: rgba(240, 240, 240, .8);
+  color: #eee;
+  overflow: hidden;
+  padding: 8px 4px 4px;
+}
+
+.diomsg-user-chat-list-participants-list {
+  color: #3ED8F30;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+[id^="diomsg-user-chat-list-delete-chat-button"]  {
+  border: 1px solid transparent;
+  display: block;
+  padding: 0;
+  transition: all .2s ease-in-out
+}
+[id^="diomsg-user-chat-list-delete-chat-button"].positive {
+background: none;
+border: 1px solid transparent;
+}
+
+[id^="diomsg-user-chat-list-delete-chat-button"]:hover, [id^="diomsg-user-chat-list-delete-chat-button"].positive:hover {
+background: #eee;
+border-color: #ccc;
+border-radius: 3px;
+cursor: pointer;
+}
+
+/* ***
+ * Forms
+ * *** */
+.diomsg-form-field {
+//  margin: 4px;
+}
+
+.diomsg-form-label {
+  display: block;
+  font-size: 1.2em;
+  margin: 12px 4px 0;
+}
+
+/* ***
+ * Icons
+ * *** */
+.icon {
+  background: url('%{media}/.assets/devIcons.svg') no-repeat center transparent;
+  background-size: cover;
+  display: block;
+  height: 16px;
+  margin: 6px;
+  width: 16px;
+}
+
+.icon-plus {
+  background-position: 0px -64px;
+}
+
+.icon-refresh {
+  background-position: 0px -48px;
+}
+
+.icon-trash {
+  background-position: 0px -32px;
+}
+
+.diomsg-avatar-icon {
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+
+.diomsg-avatar-empty {
+  background-image: url('//lib.drov.io/re74dadfe3ac5262d28e196809eaec395.red/f0b34bc25e096aef8de05f35dcdec095/resources/global/profile.svg');
+  background-size: 22px;
+}
+
+/* ***
+ * Utilities
+ * *** */
+.diomsg-util-clearfix {
+  overflow: hidden;
+}
+
+.diomsg-util-FlL {
+  float: left;
+}
+
+.diomsg-util-FlR {
+  float: right;
+}
+
+.diomsg-util-FlN {
+  float: none;
+}
+
+.diomsg-util-DsIn {
+  display: inline;
+}
+
+.diomsg-util-DsN {
+  display: none;
+}
+
+.diomsg-util-MarTBN {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ***
+ * DrovIO Overrides
+ * *** */
+#applicationContainer.applicationTester {
+  overflow: hidden;
+}

@@ -1,0 +1,49 @@
+.diomsg-toolbar {
+  border-bottom: 1px solid #CCC;
+  height: 50px;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-actions-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-action {
+  float: left;
+}
+
+.diomsg-new-chat-button  {
+  border: 1px solid transparent;
+  display: block;
+  transition: all .2s ease-in-out
+}
+.diomsg-new-chat-button:hover {
+background: #FFF;
+border-color: #CCC;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.ico-plus {
+  background: url('%{media}/.assets/devIcons.svg') no-repeat center transparent;
+  background-position: 0px -64px;
+  background-size: cover;
+  display: block;
+  height: 16px;
+  margin: 6px;
+  width: 16px;
+}
+
+.diomsg-chat-message-list {
+  background: rgba(240, 240, 240, .9);
+}
+
+.diomsg-message-container {
+  background: rgba(120, 140, 180, .9);
+  border: 1px solid;
+  float: left;
+  margin: 4px;
+  padding: 4px;
+  width: 75%;
+}

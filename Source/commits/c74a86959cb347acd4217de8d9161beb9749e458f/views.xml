@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views><view name="MainView"/><folder name="chat"><view name="New"/><view name="GetContactSelectionList"/><view name="NewMessage"/><view name="GetUserChatList"></view></folder></views>

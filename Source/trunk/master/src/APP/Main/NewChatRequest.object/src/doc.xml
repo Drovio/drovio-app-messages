@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="NewChatRequest" abstract="">
+    <info>
+      <version>1.0</version>
+      <build>1</build>
+      <datecreated>1441021283</datecreated>
+      <daterevised>1443550552</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a request for creating a new Chat.</title>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="integer" name="NO_RECIPIENT_ID">
+        <description>An ID that indicates that no recipients have been specified for the new Chat. See the Chat::getRecipients method for the definition of a Chat recipient.</description>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="firstMessageContent">
+          <description/>
+        </prop>
+        <prop type="integer" name="ownerId">
+          <description/>
+        </prop>
+        <prop type="array" name="recipientsIds">
+          <description>An array of integers.</description>
+        </prop>
+        <prop type="integer" name="teamId">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="fromEngine" returntype="NewChatRequest" static="true">
+          <description>Creates a new NewChatRequest with data retrieved from the "engine".</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$ownerId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$recipientsIds" type="array" defaultvalue="">
+              <description>An array of integers that contains the IDs of the new Chat's recipients.
+
+See the Chat::getRecipients method for the definition of a new Chat.</description>
+            </parameter>
+            <parameter name="$teamId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$firstMessageContent" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getFirstMessageContent" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getFirstRecipientId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the first recipient of the new Chat.
+
+See the Chat::getRecipients method for the definition of a new Chat.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getOwnerId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getRecipientsIds" returntype="array">
+          <description/>
+          <parameters/>
+          <returndescription>An array of integers that contains the IDs of the new Chat's recipients.
+
+See the Chat::getRecipients method for the definition of a new Chat.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeamId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

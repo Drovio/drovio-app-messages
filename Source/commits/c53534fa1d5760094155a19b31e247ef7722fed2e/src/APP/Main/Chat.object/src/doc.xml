@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="Chat" abstract="">
+    <info>
+      <version>7.0</version>
+      <build>1</build>
+      <datecreated>1440839610</datecreated>
+      <daterevised>1442599222</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="\DateTime" name="createdAt">
+          <description/>
+        </prop>
+        <prop type="integer" name="id">
+          <description/>
+        </prop>
+        <prop type="integer" name="lastMessageId">
+          <description/>
+        </prop>
+        <prop type="integer" name="owner">
+          <description/>
+        </prop>
+        <prop type="integer" name="participants">
+          <description/>
+        </prop>
+        <prop type="integer" name="recipients">
+          <description/>
+        </prop>
+        <prop type="integer" name="team">
+          <description/>
+        </prop>
+        <prop type="\DateTime" name="updated">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="Chat" static="true">
+          <description>Creates a new Chat were all of its required fields are set.</description>
+          <parameters>
+            <parameter name="$owner" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$recipients" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$team" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$createdAt" type="\DateTime" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws>
+            <exception>\InvalidArgumentException</exception>
+          </throws>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="Chat" static="true">
+          <description>Creates a new Chat were only its id is set.</description>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="Chat">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getCreatedAt" returntype="\DateTime">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getLastMessageId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getOwner" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getParticipants" returntype="integer">
+          <description>Returns the IDs of all the participants of this Chat.
+
+The difference with the "getRecipients" method is that this method includes the Chat owner in the returned result.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getRecipients" returntype="integer">
+          <description>Returns the IDs of this Chat's recipients.
+
+The difference with the "getParticipants" method is that this method does not include the Chat owner in the returned result.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeam" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isUpdated" returntype="boolean">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withCreatedAt" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$createdAt" type="\DateTime" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withLastMessageId" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withOwner" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$owner" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withParticipants" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$participants" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withTeam" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$team" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withUpdated" returntype="Chat">
+          <description/>
+          <parameters>
+            <parameter name="$updated" type="boolean" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

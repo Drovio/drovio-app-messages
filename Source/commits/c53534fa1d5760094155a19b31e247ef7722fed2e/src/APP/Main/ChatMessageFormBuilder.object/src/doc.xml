@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatMessageFormBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1442605679</datecreated>
+      <daterevised>1442605679</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description/>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="string" name="FIELD_NAME_AUTHOR_ID">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_CHAT_ID">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_FIRST_MESSAGE">
+        <description/>
+      </const>
+      <const type="string" name="FIELD_NAME_MESSAGE">
+        <description/>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="authorId">
+          <description/>
+        </prop>
+        <prop type="Chat" name="chat">
+          <description/>
+        </prop>
+        <prop type="Form" name="form">
+          <description/>
+        </prop>
+        <prop type="ChatMessage" name="message">
+          <description/>
+        </prop>
+        <prop type="DOMElement" name="sendButton">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$form" type="Form" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildFirstMessage" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildForm" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildLoggedInUserAsAuthor" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="buildSendButton" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withChat" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$chatId" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withMessage" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$message" type="" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

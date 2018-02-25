@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="ChatParticipant" abstract="">
+    <info>
+      <version>6.0</version>
+      <build>1</build>
+      <datecreated>1440838623</datecreated>
+      <daterevised>1443547345</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Represents a participant of a Chat.</title>
+      <description>See the "Setter Methods Naming Convention" note in the Chat class description.
+
+Also, see the Chat::getParticipants method for the definition of a Chat participant.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="integer" name="accountId">
+          <description/>
+        </prop>
+        <prop type="string" name="avatar">
+          <description>The URL of this participant's avatar.</description>
+        </prop>
+        <prop type="string" name="chat">
+          <description>The ID of the Chat this participant is member of.</description>
+        </prop>
+        <prop type="string" name="id">
+          <description/>
+        </prop>
+        <prop type="string" name="name">
+          <description/>
+        </prop>
+        <prop type="array" name="teams">
+          <description>An array of integers with the IDs of the teams this participant belongs to.</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="newWithAll" returntype="ChatParticipant" static="true">
+          <description>Creates a new ChatParticipant were all of its required fields are set.</description>
+          <parameters>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$team" type="array" defaultvalue="">
+              <description>The ID of the team this participant belongs to.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="newWithId" returntype="ChatParticipant" static="true">
+          <description>Creates a new ChatParticipant were only her ID is set.</description>
+          <parameters>
+            <parameter name="$id" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated>Use the "newWithKey" method instead.</deprecated>
+        </method>
+        <method name="newWithKey" returntype="ChatParticipant" static="true">
+          <description>Creates a new ChatParticipant were only her ID is set.</description>
+          <parameters>
+            <parameter name="$chatId" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$accountId" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAvatar" returntype="string">
+          <description>The URL of the participant's avatar.
+
+See the ChatManager::findChatParticipantAvatarFromAccount for further details.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAccountId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getChat" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>The owning Chat's ID.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getId" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated>The ID field is no longer used. A composite primary key is used instead.</deprecated>
+        </method>
+        <method name="getName" returntype="string">
+          <description/>
+          <parameters/>
+          <returndescription>See the ChatManager::findChatParticipantNameFromAccount for further details.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getFirstTeam" returntype="integer">
+          <description/>
+          <parameters/>
+          <returndescription>The ID of the first team this participant belongs to.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getTeams" returntype="array">
+          <description/>
+          <parameters/>
+          <returndescription>An array of integers that indicate the IDs of the teams this participant belongs to.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isMemberOf" returntype="boolean">
+          <description/>
+          <parameters>
+            <parameter name="$team" type="integer" defaultvalue="">
+              <description>The ID of the team this participant is checked against.</description>
+            </parameter>
+          </parameters>
+          <returndescription>"true" if this participant belongs to the given team.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAvatar" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$avatar" type="The URL of this participant's avatar." defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withAccountId" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withChat" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$chat" type="string" defaultvalue="">
+              <description>The ID of the Chat this participant is member of.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withId" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$id" type="integer" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated>The ID field is no longer used. A composite primary key is used instead.</deprecated>
+        </method>
+        <method name="withName" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$name" type="string" defaultvalue="">
+              <description>See method ChatManager::findChatParticipantNameFromAccount for further details.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="withTeams" returntype="ChatParticipant">
+          <description/>
+          <parameters>
+            <parameter name="$teams" type="array" defaultvalue="">
+              <description>An array of integer that correspond to the IDs of the teams this participant belongs to.</description>
+            </parameter>
+          </parameters>
+          <returndescription>$this</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

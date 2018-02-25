@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="Cache" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>3</build>
+      <datecreated>1442598796</datecreated>
+      <daterevised>1443451597</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description>A general purpose cache.
+
+Only strings are allowed as keys.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="array" name="entries">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="add" returntype="void">
+          <description/>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$value" type="mixed" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="addIfNotPresent" returntype="void">
+          <description>Same as the "add" method, except that the "key" is added to the cache only if it is not already in the cache.</description>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+            <parameter name="$value" type="mixed" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="mixed">
+          <description>Returns the value corresponding to the "key".</description>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="isPresent" returntype="boolean">
+          <description/>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription>Returns "true" if this Cache contains a value corresponding to the "key".</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="remove" returntype="void">
+          <description>Removes the entry corresponding to the "key".</description>
+          <parameters>
+            <parameter name="$key" type="string" defaultvalue="">
+              <description/>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>

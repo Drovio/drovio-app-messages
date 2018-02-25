@@ -1,0 +1,151 @@
+.diomsg-app-content {
+  overflow: hidden;
+}
+
+.diomsg-column {
+  float: left;
+}
+
+.diomsg-main-container {
+  width: 75%;
+}
+
+.diomsg-sidebar-container {
+  width: 25%;
+}
+
+.diomsg-toolbar {
+  border-bottom: 1px solid #CCC;
+  height: 50px;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-actions-list {
+  list-style: none;
+  overflow: hidden;
+}
+
+.diomsg-toolbar-action {
+  float: left;
+}
+
+.diomsg-chat-button {
+  border: 1px solid transparent;
+  display: block;
+  transition: all .2s ease-in-out;
+  
+  &:hover {
+    background: #FFF;
+    border-color: #CCC;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  background: url('%{media}/.assets/devIcons.svg') no-repeat center transparent;
+  background-size: cover;
+  display: block;
+  height: 16px;
+  margin: 6px;
+  width: 16px;
+}
+
+.icon-plus {
+  background-position: 0px -64px;
+}
+
+.icon-trash {
+  background-position: 0px -32px;
+}
+
+.diomsg-message-input-field {
+  float: left;
+}
+
+.diomsg-chat-message-list {
+  background: rgba(240, 240, 240, .9);
+}
+
+.diomsg-message-container {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  margin: 0 4px 10px;
+  padding: 4px;
+  width: 75%;
+
+  &:first-child {
+    margin-top: 4px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.diomsg-message-author {
+  box-sizing: border-box;
+  color: #ccc;
+  float: left;
+  font-size: .9em;
+  padding: 4px;
+  width: 20%;
+}
+
+.diomsg-message {
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #51ace0;
+  float: left;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 4px;
+  width: 80%;
+}
+
+.diomsg-message-created-at {
+  color: #ccc;
+  float: right;
+  font-size: .85em;
+  font-style: italic;
+}
+
+.diomsg-user-chat {
+  background: white;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 12px;
+  padding: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.diomsg-user-chat-list-item-container {
+  overflow: hidden;
+}
+
+.diomsg-user-chat-list-item-message-author {
+  color: #ccc;
+  font-size: .9em;
+}
+
+.diomsg-user-chat-list-item-message-content {
+  color: #51ace0;
+}
+
+.diomsg-user-chat-list-item-message-created-at {
+  color: #ccc;
+  float: right;
+  font-size: .85em;
+  font-style: italic;
+}
+
+.diomsg-util-FlN {
+  float: none;
+}

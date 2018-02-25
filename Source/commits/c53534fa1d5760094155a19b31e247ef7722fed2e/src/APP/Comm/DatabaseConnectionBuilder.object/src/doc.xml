@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Comm" namespace="\">
+  <class name="DatabaseConnectionBuilder" abstract="">
+    <info>
+      <version>0.1</version>
+      <build>1</build>
+      <datecreated>1442598595</datecreated>
+      <daterevised>1442598595</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title/>
+      <description>Creates a dbConnection.</description>
+      <deprecated/>
+    </info>
+    <constants/>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="" name="connection">
+          <description/>
+        </prop>
+        <prop type="" name="database">
+          <description/>
+        </prop>
+        <prop type="" name="dbType">
+          <description/>
+        </prop>
+        <prop type="" name="host">
+          <description/>
+        </prop>
+        <prop type="" name="password">
+          <description/>
+        </prop>
+        <prop type="" name="username">
+          <description/>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="getConnection" returntype="dbConnection">
+          <description/>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private"/>
+    </methods>
+  </class>
+</manual>
