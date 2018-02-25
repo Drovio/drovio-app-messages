@@ -1,0 +1,41 @@
+<DATA>
+
+	<ROW>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<version>0.5</version>
+		<build>1</build>
+		<time>1443897576</time>
+		<title>Messages</title>
+		<description>This is the initial version of the messages application.
+It supports:
+- Exchange simple messages with another team member.
+- Listing all conversations, create new ones and delete.</description>
+	</ROW>
+
+	<ROW>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<version>0.5</version>
+		<build>2</build>
+		<time>1443897668</time>
+		<title>Messages</title>
+		<description>This is the initial version of the messages application.
+It supports:
+- Exchange simple messages with another team member.
+- Listing all conversations, create new ones and delete.</description>
+	</ROW>
+
+	<ROW>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<version>0.5</version>
+		<build>3</build>
+		<time>1443898689</time>
+		<title>Messages</title>
+		<description>This is the initial version of the messages application.
+It supports:
+- Exchange simple messages with another team member.
+- Listing all conversations, create new ones and delete.</description>
+	</ROW>
+</DATA>

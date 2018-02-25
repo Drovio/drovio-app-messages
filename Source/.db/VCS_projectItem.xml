@@ -1,0 +1,488 @@
+<DATA>
+
+	<ROW>
+		<id>app01ef90b52a8db3493f973c197801b0f8</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Util/</path>
+		<name>Cache.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app08a987c793c8ac57c62629d190f97ab3</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>GetChatMessagesResponseBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app114a113182edcaa6a1544280cde95247</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Comm/</path>
+		<name>DatabaseConnectionBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app121552ba3b4caea9a62a2adf7a2cc5d7</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatParticipant.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app161bcf6d5fc7acd44090af993454ce48</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatManager.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app180222aa69c84d2defccccda239872a7</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>GetChatMessagesResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app1e793d59bb397a1b0b25d98a14de26bf</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatParticipantTeam.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app25e6290df599257a8214a86d0a1a8803</id>
+		<project_id>61</project_id>
+		<path>/</path>
+		<name>settings.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app2c78971e5746529d50b9764ebc4cf0bb</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>New.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app383351ea899ec0e1dfcc4ffef75b8dfb</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>PendingMessage.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app3aa4ba7cad8bd27407fed7aced67a03c</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>Close.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app3c4caf3572d14820e15a093884dea550</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Persist/</path>
+		<name>IdGeneratorInterface.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app44dd20030259ce492212cd1a65a347c8</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>new.view</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app4c4dca9c4334c8d6059d463484033536</id>
+		<project_id>61</project_id>
+		<path>/views/</path>
+		<name>MainView.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app6135dafa3a6157080f032c44112eb4cd</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatMessageFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app61e8872ebe82a9fd02c2b7b9b1910d69</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>NewChatMessageResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app6777099972676ec3f10523f5b3e71e11</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatParametersSet.object</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app694a0bf0b2dad2dc0da898b78cf0e35c</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>Chat.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app6a33f897120b9d41fa44f650a4f19018</id>
+		<project_id>61</project_id>
+		<path>/</path>
+		<name>views.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app6b65f657bd6071744e73cf974e92819e</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Comm/</path>
+		<name>dbConnection.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app6d19402a8f6f64692f5526f575c67092</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>GetMessagesFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app778405c01cd4b5375cdd175425607ab1</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>GetContactSelectionList.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app785cb08afde75b0a0e62b592ea40c709</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>PollMessagesResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app7b2d5d40a73a76efba4eba390968ae4d</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Persist/</path>
+		<name>IdGenerator.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app7bd61a31eb1ebbd54acce24c48cd86dc</id>
+		<project_id>61</project_id>
+		<path>/</path>
+		<name>index.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app7ef921428c8d410b6f8678b3f27ee961</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatMessageManager.object</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app88f1edb621f260ef81463d6e55c419e5</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>Delete.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app8d96c9668cdb2983539bd5104a0d9432</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>PollPendingMessages.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app971e9789da8d4454458cfc5dcf5f92c5</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>Open.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app97bcd9312d6e8d15341936058f9e8fe3</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>DeleteChatRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app9a9499d40781515fa60a330d29cd8d53</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>NewChatMessageRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appa1d0606f2cf131d7a6f24cbfb891fd75</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>DeleteChatFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appad1ab81f7d991e09e037af6e36fdd082</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>GetUserChatList.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appaf4e7e6de2c2053398e70b1f6468a171</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatMessage.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb08b3405343ebb0763e2d7a4f25d7e81</id>
+		<project_id>61</project_id>
+		<path>/</path>
+		<name>source.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb19a5d33a93217080ee8e62f127ecdf8</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>NewChatResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb1ca1c9c55af48d71437676a0e7f3db9</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>NewChatFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb1f701dcdad388d973412f8b9ffd2f9a</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>CloseChatRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb76e8c1f9195f21eaadbc4120fdc1444</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>GetNewChatForm.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb7e1f778201140b50117e811fa959faf</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>DeleteChatResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appbec5f5f4e009571ad78e2183d959d35a</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>GetMessages.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appbf1094e6a0559d8a78e80b7408225129</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatOwner.object</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appc2726859deaf2f3b216e735ff9484221</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>OpenChatResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appc40a9e288e14c185841e352fd506c8ea</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatRecipient.object</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appd455f77eaa2dad48ce5c79fd1f499e40</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>NewChatRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appd87d1b1932221a2f225db55a128d3042</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>PollMessagesFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appdf16eb625a2707b9acaf8e96c0bd04f9</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>ChatMessageForm.object</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appe04d38104aa326dc27570d38de20d3bc</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>UserChatListFormBuilder.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appe557818a6e1e96d44772ceb610661577</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>Cache.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appec230844376ad21d207402e4273835bc</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>CloseChatResponse.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appf06b8f00d03cb98b392eb8ce9326c4de</id>
+		<project_id>61</project_id>
+		<path>/views/chat</path>
+		<name>NewMessage.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appf61083fce6570d220d03f53271d7fdcb</id>
+		<project_id>61</project_id>
+		<path>/views/</path>
+		<name>error.view</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appf8536d97c1408e8dfb6a65a7d6813615</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>GetChatMessagesRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appfab26cff11daadb041b8c608ddca7922</id>
+		<project_id>61</project_id>
+		<path>/src/APP/Main/</path>
+		<name>PollMessagesRequest.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+</DATA>

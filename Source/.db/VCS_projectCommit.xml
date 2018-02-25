@@ -1,0 +1,1888 @@
+<DATA>
+
+	<ROW>
+		<id>c17f37e9aad3369ee04cb92aa0032015410dd8d33</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1440755199</time>
+		<author_id>22</author_id>
+		<summary>Clean up the auto-generated code of MainView.</summary>
+		<description></description>
+		<tags>format</tags>
+	</ROW>
+
+	<ROW>
+		<id>c589bc6e168ca7993bcf4e0b4c61dc9a8ac1c5561</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1440760061</time>
+		<author_id>22</author_id>
+		<summary>Add the "toolbar".</summary>
+		<description></description>
+		<tags>ui</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6f9053dfcce15e3c09f4eebb35c14c97a26f0d3e</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1440765198</time>
+		<author_id>22</author_id>
+		<summary>Display the "Contact Selection Dialog Frame" on "New Chat Button" click.</summary>
+		<description></description>
+		<tags>diomsg</tags>
+	</ROW>
+
+	<ROW>
+		<id>c62e4d61680d1d6ecc907448198b91a6cbe669f2a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1440781205</time>
+		<author_id>22</author_id>
+		<summary>Establish communication among MainView, chat/GetContactSelectionList and chat/New views.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c164e0acd76cc341b13877d5cd1d64015e6c7232d</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441031872</time>
+		<author_id>22</author_id>
+		<summary>Store a new Chat to the database.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd58ffdeccad5c9701588d4360ac06aff2fe1a6b9</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441034622</time>
+		<author_id>22</author_id>
+		<summary>Call "team::validate" before starting a new chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c864d2413a627c241eb1bacefbd1ff247fbad9541</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441035172</time>
+		<author_id>22</author_id>
+		<summary>Require login before accessing the application.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c2ece4b72c8187fe2a09e8d54b54afc1a324b12e5</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441039744</time>
+		<author_id>22</author_id>
+		<summary>Load the contacts from the database.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c235b0d584ec59721fa44415916f2603cecb657d1</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441041911</time>
+		<author_id>22</author_id>
+		<summary>Return the JSON representation of a NewChatResponse from the New view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cb639e6d3824bc5bd24765f0b97f72e780e552674</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441043544</time>
+		<author_id>22</author_id>
+		<summary>Decode the JSON response returned by the New view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c603c63d171b4615417567dc5e00b803bf4c73d51</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441045156</time>
+		<author_id>22</author_id>
+		<summary>Save the chat recipients when creating a new chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c0aac541e020790754a252318b64f2ef03ec4c157</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441108613</time>
+		<author_id>22</author_id>
+		<summary>Return a form for message input when starting a new chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cce6bbd74c7df31316f4485271a61e3ae28ff0c34</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441111934</time>
+		<author_id>22</author_id>
+		<summary>Submit chat message when pressing the "Enter" button inside the message text-area.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6e7b52030394355fce2869a5628a29c102e0ad39</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441212744</time>
+		<author_id>22</author_id>
+		<summary>Store a new chat message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c91738b352ac1e36a54c819728da31ba4c7b3a932</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441213927</time>
+		<author_id>22</author_id>
+		<summary>Clear the message input box after the user has sent a new message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c99e01cebc37674f981fe2ce218d3b7913738aff4</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441214027</time>
+		<author_id>22</author_id>
+		<summary>Remove debugging code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6a3a6aa73a70fef1309d8404f7e565a1956ab59a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441214979</time>
+		<author_id>22</author_id>
+		<summary>Define JS method MainController::_assignIdToFirstFreeChatList.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c26ca594c2a68ef777d8d625b0877fd807f20a0bb</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441217104</time>
+		<author_id>22</author_id>
+		<summary>Add a new chat message to the "chat message list".</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c3ea94324459419678f31d1fe754318323e594cef</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441218184</time>
+		<author_id>22</author_id>
+		<summary>Add some styles to the chat messages so that they can be distinguished one from another.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ca047f9a828d6ab80c4d7a7b040c3da15b617e130</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441228369</time>
+		<author_id>22</author_id>
+		<summary>Focus the message input box again once a message has been submitted successfully!</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd6d01b2c55ed4f0400560288a7d5f6d7dac01467</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441229762</time>
+		<author_id>22</author_id>
+		<summary>Add the sidebar.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c37e0f231f798fb93ad8d513c93e67bf0d2cba089</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441456750</time>
+		<author_id>22</author_id>
+		<summary>Refactor the Domain Model to use IDs instead of objects.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5873bb93ae8ee0db91e2b6e2baf990386edfc6b6</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441536266</time>
+		<author_id>22</author_id>
+		<summary>Store a Chat's owner along with its participants.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5dadb645ecee1a0c39d9da9bda467e403e0114d3</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441549683</time>
+		<author_id>22</author_id>
+		<summary>Before losing the ChatManager.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c70bf045f32b06f66147c4549c0b24459f3fe619b</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441550813</time>
+		<author_id>22</author_id>
+		<summary>Save "created_at" and "last_message_at" when creating a new Chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c4ec9775859d8dd7dc44fc49fe7f18d9704bf93bc</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441553600</time>
+		<author_id>22</author_id>
+		<summary>Store a chat's last message time when creating the message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c74a86959cb347acd4217de8d9161beb9749e458f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441576253</time>
+		<author_id>22</author_id>
+		<summary>Display the "User Chat List" on application startup.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1d2651f419636453cc6fa868d83f17975b13124c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441576570</time>
+		<author_id>22</author_id>
+		<summary>Pass a Chat object to the UserChatListFormBuilder::buildChatItem method.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c48dfb0cc8ef1c6ad50d76acf788406db2e8bda3c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441576907</time>
+		<author_id>22</author_id>
+		<summary>Use the ChatManager::DATE_TIME_LOCAL_FORMAT for displaying time in the UI.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c69d5fa0ee81e22723d6dd3687fc5fe44599243ac</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441632243</time>
+		<author_id>22</author_id>
+		<summary>Show last messages of all chats were the current user is a participant of.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9641e4212f3d24c90670edc806f3fa78e2c8700e</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441632623</time>
+		<author_id>22</author_id>
+		<summary>Return "You" as the author of the last message of a chat for messages of the current user.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c379751bbab3a25b841e75642bdbec348a529dc8b</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441633314</time>
+		<author_id>22</author_id>
+		<summary>Position the creation time of a chat's last message to the right.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c71bd7a19407913967eebda9ca9ab11877729d3fa</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441635293</time>
+		<author_id>22</author_id>
+		<summary>Submit a request to the "chat/Open" when selecting a chat from the "User Chat List".</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c22f0f94bace8e79847dff318f8c10c6516b932fe</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441639754</time>
+		<author_id>22</author_id>
+		<summary>Define setters and getters for the MainViewController::activeChatList property.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c49337f14b374b704cdb840c4ff6f60cac874bcaa</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441640790</time>
+		<author_id>22</author_id>
+		<summary>Add the MainViewController::activeChatList property.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cfa3f8d0bb1d60da664722af8ae85357245fc23bc</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441641030</time>
+		<author_id>22</author_id>
+		<summary>Define setters and getters for the MainViewController::activeChatList property (renewed).</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ce6792cfcfd29fa29272e781d2dea521503433212</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441643289</time>
+		<author_id>22</author_id>
+		<summary>Add the message just submitted by the current user to the message list of the active chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c15708e2f66ed0b1bab207af603bb48a3a9be838e</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441656278</time>
+		<author_id>22</author_id>
+		<summary>Add the "Get Chat Messages Form" to the response of the GetMessages view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c84abbdc20f8bff9c3a01940a5c2b65de9c1b9bf2</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441658809</time>
+		<author_id>22</author_id>
+		<summary>Load a chat's messages in the GetMessages view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c92365e552a3a7e2195116c8c36cb5940d77daf5d</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441659197</time>
+		<author_id>22</author_id>
+		<summary>Format the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1f4cf4b0da15358d067e7561ed35d1595d5e37db</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441724225</time>
+		<author_id>22</author_id>
+		<summary>Submit the selected chat from the "User Chat List" to the GetMessages view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c60e582ed71bb314dd7665223efd5b69c59f2dc48</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441724475</time>
+		<author_id>22</author_id>
+		<summary>Format the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6138974fdbff019bd38dcad2185e7be42b5048ec</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441725556</time>
+		<author_id>22</author_id>
+		<summary>Load a chat's messages when selecting it from the "User Chats List".</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c4d046b2679d5f465b62e753101f95d9265c60e50</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441727126</time>
+		<author_id>22</author_id>
+		<summary>Load the author and creation time of chat messages when opening a chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc73983ce5a70b8e82932f35e6da76a22c8d0313a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441727908</time>
+		<author_id>22</author_id>
+		<summary>Add some style to the chat messages.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cb9d13c21e65fabe96fd9c10e8985cf2e06335601</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441803036</time>
+		<author_id>22</author_id>
+		<summary>Add class PendingMessage.</summary>
+		<description></description>
+		<tags>ap</tags>
+	</ROW>
+
+	<ROW>
+		<id>ccf49c0b978dcd5d575f6517ecfed69f18538ceb9</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441805971</time>
+		<author_id>22</author_id>
+		<summary>Mark a new ChatMessage as a PendingMessage.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9a903364fd432b9f49d65e460325f06d64a3d028</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441808446</time>
+		<author_id>22</author_id>
+		<summary>Load the PollPendingMessages view into the MainView.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c23f3ab578ce9b8a005b1a666d4a83ad9debbb88a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441827797</time>
+		<author_id>22</author_id>
+		<summary>Connect the MainView and the PollPendingMessages views.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cabce77fdebeb6207746ad23d03e2e2f9a0d95bfe</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441830152</time>
+		<author_id>22</author_id>
+		<summary>Add missing assignments to the PollMessagesRequest class constructor.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1687c6e6ae5a23a5346de8cab33d0c8fd1e2d0e7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441830503</time>
+		<author_id>22</author_id>
+		<summary>Fix syntax errors in the SQL query of the ChatManager::findPendingMessagesOfChatParticipant method.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c7b397d05472cee1436797a871e5022270a952bad</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441830527</time>
+		<author_id>22</author_id>
+		<summary>Remove debugging code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c14cf240a4545ff743cf033409080cb1737e9ac86</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441835707</time>
+		<author_id>22</author_id>
+		<summary>Return a chat participant's pending messages via JSON.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cba3450c7abf453280ae9c3b7681cd80e9c388fe2</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441882314</time>
+		<author_id>22</author_id>
+		<summary>Add a new message box for every pending message received.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc9aba889c2592195ace27d42b6a9fc9ce48ed818</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441884033</time>
+		<author_id>22</author_id>
+		<summary>Retrieve the just typed message via the PollPendingMessages view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cbeb9c87faf7015d67b5dc76f077881c3156d8b2c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441903358</time>
+		<author_id>22</author_id>
+		<summary>Use the "chat/Open" view to retrieve the messages of the selected Chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c7c550ce06df536602ee2e3569df79cc26752ff3a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441904910</time>
+		<author_id>22</author_id>
+		<summary>Poll for new messages after a new chat is started.</summary>
+		<description>This piece of functionality was present, but it was lost after another "Source Code Item Assassination" by the editor.</description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c90875ba0df1640b4e0c34d51366aeb734809af41</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441905005</time>
+		<author_id>22</author_id>
+		<summary>Clear the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ceba05a1fe51feff52a40dab820da151499ab29a4</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441906922</time>
+		<author_id>22</author_id>
+		<summary>Return an opened Chat's messages as JSON.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cebf1bc18a15d69f32883fad6369d3b2b64444492</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441908648</time>
+		<author_id>22</author_id>
+		<summary>Load the messages of a selected Chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6b7d105db88160f0e0761ad236960afc4ab3d548</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441909047</time>
+		<author_id>22</author_id>
+		<summary>Prepare for adding the message input box when opening a Chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cfa54db582fba09e4aaf0590c8bb0185171dcf28e</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441914251</time>
+		<author_id>22</author_id>
+		<summary>Complete the task of opening the selected Chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1382d93fe09238bddd78064ce76c388a17f41e7a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1441918380</time>
+		<author_id>22</author_id>
+		<summary>Close the active chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c63b3e35f609fc3de927dc9f6598f2f4872c72280</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442054490</time>
+		<author_id>22</author_id>
+		<summary>Show updated chats.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cbd83c7b0d154926a839e4fa91ddb295bbdd73bc7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442056125</time>
+		<author_id>22</author_id>
+		<summary>Poll for chats.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cdf6f9457700f1b0ce5e6ad4a4a6be8dddb48bf35</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442058640</time>
+		<author_id>22</author_id>
+		<summary>Remove "updated" mark from chats.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c61c8a1100ebd4a1cae224a3c5c82ff3819f72aae</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442071931</time>
+		<author_id>22</author_id>
+		<summary>Add tooltips.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cb6e6ccd4f696d82b5a445d97687ff8b0e3b93905</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442229567</time>
+		<author_id>22</author_id>
+		<summary>Ensure the messages of the chat being opened are displayed.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c2e4469e70ba7a1e5e48ba2333b75054d36105c83</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442231211</time>
+		<author_id>22</author_id>
+		<summary>Remove the Enter key character from the end of a chat message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd337be22220169d39c481ee27f8f546d2b341cd0</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442235648</time>
+		<author_id>22</author_id>
+		<summary>Change to timeout for pending messages.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd0b62f04394eeab6a6139b989db45867eec67c3a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442235810</time>
+		<author_id>22</author_id>
+		<summary>Clean up the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5083c859fb17e50c420151490f58d2a2d5010a08</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442247123</time>
+		<author_id>22</author_id>
+		<summary>Fix issue where the preview refresh button does not load the chat messages.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c3fa66a08c347564c2cac0c5229c0e67cb675013f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442248020</time>
+		<author_id>22</author_id>
+		<summary>Establish the mechanism for reloading user chat list on new chat.</summary>
+		<description>The new chat is not yet displayed immediately after creation due to the fact that no message exists in that chat.
+
+Once the chat's first message is created along with the chat itself, then this mechanism will produce the desired result.</description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cafa7921f2b291ec91a8f3ce4c7937a231a98deb8</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442251456</time>
+		<author_id>22</author_id>
+		<summary>Clean up the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c13bf100b8676dfcaf55179028c46b3699a2dce62</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442255802</time>
+		<author_id>22</author_id>
+		<summary>Refresh the user chat list on chat's first message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cb17fef3cf3b49a474106faff4a5a195dd1d8c876</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442256884</time>
+		<author_id>22</author_id>
+		<summary>Commit for error.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd2822e262e63fc018417971c23971fdfa4788c24</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442260506</time>
+		<author_id>22</author_id>
+		<summary>Poll for messages every 5 seconds.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc841a395112e1de62dc6b7d51b39ef7add0951f5</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442261092</time>
+		<author_id>22</author_id>
+		<summary>Display only team chats in user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c0902877a015cccac9b0f7ef71d616bb637b1eaba</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442267474</time>
+		<author_id>22</author_id>
+		<summary>Replace the form with actions in the GetUserChatList view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c94df905487fa6aa4cdfb89aa73140e7b25be5ccd</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442267914</time>
+		<author_id>22</author_id>
+		<summary>Deprecate the GetMessages view.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf86031348732afc6d72aef4203d97a8ecdff4057</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442270462</time>
+		<author_id>22</author_id>
+		<summary>Set action for chat messages polling.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c8940923a16273d76478546edb763513839b9075a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442272708</time>
+		<author_id>22</author_id>
+		<summary>[WIP] Poll chat pending messages via GET.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c78cdb6bb2b29b242038b8eba46fc5261d0095606</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442342643</time>
+		<author_id>22</author_id>
+		<summary>Replace forms with actions for GET requests.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c10967b7d179989cfea7823b21949482527402fbe</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442353888</time>
+		<author_id>22</author_id>
+		<summary>Add some style rules to the message list and the message input box.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc4ed63739ef8502696a786c8fbb10032c59d64b9</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442414975</time>
+		<author_id>22</author_id>
+		<summary>Make the chat list auto-scrollable.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c19835e52ae48d2c57b8387dd64abceef900e0453</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442415899</time>
+		<author_id>22</author_id>
+		<summary>Reload the user chat list on new message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c0ebd5b72c76619dbf23d6c147d025fd02983de09</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442416267</time>
+		<author_id>22</author_id>
+		<summary>Hide the chat message list container on startup.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf4d4e982feec9eeb03ffe69e6361d1d9c042809b</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442419459</time>
+		<author_id>22</author_id>
+		<summary>Align the messages of others to the right.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c280ce001ca309bf9ec2194be66d5c6ab37b94b89</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442422485</time>
+		<author_id>22</author_id>
+		<summary>Auto-scroll to the bottom of the chat message list only if new messages exist.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf42bc57e61a487e7e18c0573b8b6e0abfd10f2e3</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442422875</time>
+		<author_id>22</author_id>
+		<summary>Set different styles for the messages of others.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1f7daba1492e61d136eaacdb8c125d35482bf865</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442422984</time>
+		<author_id>22</author_id>
+		<summary>Place the message below its author's name in the chat message list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c138f1c7fb47cfac5aa841e027d90228c32d57a6f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442427064</time>
+		<author_id>22</author_id>
+		<summary>[WIP] Close any active chat before opening a new one.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cec38386d2e3e173fb847af1935a64279bea75db7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442429307</time>
+		<author_id>22</author_id>
+		<summary>Close current chat before creating a new or opening an old one.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6e90d5c9ba67a4e8b4185d3613fb48bd4a9bdf7c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442432150</time>
+		<author_id>22</author_id>
+		<summary>Require the first message on chat creation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf7e4aa499f8fdfbe14037ae1834c8002ab884261</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442433753</time>
+		<author_id>22</author_id>
+		<summary>Set some form related style rules.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf1f4ef9a0bfbdaba9723d8c5d9563aa5290b6aa5</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442435432</time>
+		<author_id>22</author_id>
+		<summary>Require first message on chat creation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cac13a4a989732668afba05dfac57535187fc6ad7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442441954</time>
+		<author_id>22</author_id>
+		<summary>Do not allow empty message creation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c14b825f1829b1d12c36e923c326a6087b2a7f5e7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442497557</time>
+		<author_id>22</author_id>
+		<summary>Add buttons for "open" and "delete" actions on chats.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ccd3790dea62c849dac796859e601311df9317585</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442499485</time>
+		<author_id>22</author_id>
+		<summary>Close a chat before deleting it.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf86c7c06111a75f1b42f5f6e09be5cead3bb87c7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442501077</time>
+		<author_id>22</author_id>
+		<summary>Delete a chat selected from the "User Chat List".</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c7c79fdda0a2dc10cfd8a9bda3893e5aa5f57e186</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442506425</time>
+		<author_id>22</author_id>
+		<summary>Place all chat messages to the left.</summary>
+		<description>That is, do not differentiate between current user's and the messages of others.</description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c66dccd2c4e9961abf6d25476b82eb8192043ab41</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442507237</time>
+		<author_id>22</author_id>
+		<summary>Display message creation time in the chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cdb4be1daf78ae9835df9e9371c3020f694943ae8</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442507327</time>
+		<author_id>22</author_id>
+		<summary>Remove colon character from the message author name in the chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c276f00b5ebce9fa24e750adbfdf56da26e129609</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442508770</time>
+		<author_id>22</author_id>
+		<summary>Load chat participants in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c188654e201014b256377c06e8e5c6e8f3af0b528</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442573437</time>
+		<author_id>22</author_id>
+		<summary>Open chat on message click.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9778ba526d455fe37c22903f843d5b232eba454f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442573519</time>
+		<author_id>22</author_id>
+		<summary>Display message creation time for pending messages.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c70c739241f2345d4c0f82b716a8013f900fdb7e5</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442577730</time>
+		<author_id>22</author_id>
+		<summary>Save message copies when creating a new message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c958f11d012d4659426b29097b0f199c65c85038f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442579004</time>
+		<author_id>22</author_id>
+		<summary>Read message copies when opening a chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1f6a20f3a550a997559fcb81fe7130141afeafe0</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442587431</time>
+		<author_id>22</author_id>
+		<summary>Delete only the messages copies when the chat has other participants.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cdf30cd321028276b769c83d9658016b10f09f61f</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442587738</time>
+		<author_id>22</author_id>
+		<summary>Do not load messages from deleted chats in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c1ce8ffb9132057dbd6432b04245b5255a5acccb7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442588211</time>
+		<author_id>22</author_id>
+		<summary>Undelete chat for all participants on new message.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c223bc7099c5134517a7d4f06285c13474744d8c9</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442588494</time>
+		<author_id>22</author_id>
+		<summary>Remove the current user from the user chat list participants note.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c985c776092403fab3c1de75e3daf49112eb561e6</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442588763</time>
+		<author_id>22</author_id>
+		<summary>Return all the chats of a user.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cbbbdd1d28acfab36504f1749fe78c0ee04cc42ac</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442595724</time>
+		<author_id>22</author_id>
+		<summary>Delete chat from database when no participant exists.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c034d3c807213e90cb5e016803b69c25f16f039c9</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442598401</time>
+		<author_id>22</author_id>
+		<summary>Deactivate all the chats of a participant on chat close.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c53534fa1d5760094155a19b31e247ef7722fed2e</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442606773</time>
+		<author_id>22</author_id>
+		<summary>Clean up the source code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c784c8f2c42ab6de9dd24f4dc770a0d8dd8c9a028</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442656385</time>
+		<author_id>22</author_id>
+		<summary>Add chat deletion confirmation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5562129e220744840d7a32ce5aa22a5c73daff3d</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442667313</time>
+		<author_id>22</author_id>
+		<summary>[WIP] Change the IDs from INT(11) to VARCHAR(100).</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cbc1e7093573d659fb965ed726cec85d39ee386c0</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442672238</time>
+		<author_id>22</author_id>
+		<summary>Mark the active chat in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c4cf06a04af223a7e5b963819062d05437090ba52</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442675674</time>
+		<author_id>22</author_id>
+		<summary>Add column names to all insert statements.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd0dada4a810fa44bd82230ee8d5d27128cdda985</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442676675</time>
+		<author_id>22</author_id>
+		<summary>Add SQL injection to the ChatManager::createMessageCopies method.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c8fc9e678c2b408691cacb533a1c52928330cbdaf</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442681911</time>
+		<author_id>22</author_id>
+		<summary>Complete the change of the IDs from INT to VARCHAR.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9aa2b6873de44199ca6c23699dcb27619dedc3b7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442681981</time>
+		<author_id>22</author_id>
+		<summary>Revert debugging changes.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c2f27e2baf769b30fc46fe887bdc246e4adb103b7</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442682877</time>
+		<author_id>22</author_id>
+		<summary>[WIP] Utilize the "attributes" parameter of the dbConnection::execute method for SQL injection defense.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9e5001593376e01d727098c31acc9c892ba59edf</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442750499</time>
+		<author_id>22</author_id>
+		<summary>Utilize the "attributes" parameter of the dbConnection::execute method for SQL injection attacks prevention.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cbb8bf7c745e0891ec37c978f4c5f1ce676a7f41a</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442750821</time>
+		<author_id>22</author_id>
+		<summary>Utilize the "attributes" parameter of the dbConnection::execute method for DELETE statements, too.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc7708e26660fee53b8a4ad6d2e78a21ca9519a93</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442756028</time>
+		<author_id>22</author_id>
+		<summary>Change the primary key of the MSG_pendingMessage table to a composite one.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd714d11b9ee56a9f40fa962aed0307fe117783c5</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442760370</time>
+		<author_id>22</author_id>
+		<summary>Fix issue with pending messages retrieval after changing to a composite key for the MSG_pendingMessage table.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ca88569dcd4c6d76fbde98d39cc8ee7eb084f1a56</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442761183</time>
+		<author_id>22</author_id>
+		<summary>Complete the transition to composite primary keys in the database.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c874e1f4ebd32f9b449366ff194d93ddfe69b43ae</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442761256</time>
+		<author_id>22</author_id>
+		<summary>Revert debugging changes.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c6ecbb20281e0df6780240ab7efb44177523b10c0</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442837434</time>
+		<author_id>22</author_id>
+		<summary>Change TIMESTAMP to INT for the "conversation" and "message" tables.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c393186248aab8d1ddc96379d7615d25f209dbb98</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442838312</time>
+		<author_id>22</author_id>
+		<summary>Change all time fields to INT in order to represent UNIX timestamps.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c680209c59f8bc629ae5e31e496709a9c4e25760c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442839307</time>
+		<author_id>22</author_id>
+		<summary>Hide the "Chat Message Send Button".</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c4985e5f7b7e735497688e7a797a31abf01c688e0</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442843097</time>
+		<author_id>22</author_id>
+		<summary>Set the height of the chat container to stretch the whole height available.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c634def1db2b8dcf4153004cacb5fddcc003c05ef</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442844768</time>
+		<author_id>22</author_id>
+		<summary>Mark the whole user chat list item as active.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cd4cb74a6605426f8ac986c5a2fca1375d0577597</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442844912</time>
+		<author_id>22</author_id>
+		<summary>Add a bold right border to the active chat in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cb8ad676161b57a96ba4f5467e2c37742b4bda2ec</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442845072</time>
+		<author_id>22</author_id>
+		<summary>Remove any margin among the messages of a chat.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c9780201c036d213732969e8b0ecc1c87e250b701</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442845185</time>
+		<author_id>22</author_id>
+		<summary>Remove the colon suffix from a message author.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c88a8ea750eb7506963698d82fe8b8545d3d923eb</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442847919</time>
+		<author_id>22</author_id>
+		<summary>[WIP] Load the chat participants' avatars.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ce7688b9974d1f154825f10fd8b8b4276cb966fe1</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442863915</time>
+		<author_id>22</author_id>
+		<summary>Fix issues with pending messages retrieval after the addition of avatars.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5a0357dbb5bbac6580f473ef61caeda94ad39608</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442925077</time>
+		<author_id>22</author_id>
+		<summary>Decrease the margin among chats in the user chat list to 2px.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c4d72afc07416f8dd202bf270969f17efa4aad84c</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1442925500</time>
+		<author_id>22</author_id>
+		<summary>Place the message creation time to the top right of the message box in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c318aee3dd483d598884ea8956380e2ed2ab03d2b</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443008123</time>
+		<author_id>22</author_id>
+		<summary>Add a right border to the user chat list item only when it is active.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c5f041337c5cafd1d5096276951e02476838d00db</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443022245</time>
+		<author_id>22</author_id>
+		<summary>Place a message's creation time to the top right of a message box.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c0ccb24dd802a8a7f00d5f2b708a9e6864107a917</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443023477</time>
+		<author_id>22</author_id>
+		<summary>Display the message send button and add some styles to it.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cc123e704cdf291715568b98fc972c763a8cc3686</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443023579</time>
+		<author_id>22</author_id>
+		<summary>Revert debugging changes.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ca64b930e78c404a494fcfa2064805f8f69603afb</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443028841</time>
+		<author_id>22</author_id>
+		<summary>Make the message send button equal in height with the message input field.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>ce1b66fcf57adfa37273416983dcd18959676db28</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443030214</time>
+		<author_id>22</author_id>
+		<summary>Remove styling from the user chat list item message content.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c817e365c52e43c43489f95ae63bb24b255c72231</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443030508</time>
+		<author_id>22</author_id>
+		<summary>Allow clicking on the whole chat box in order to open a chat in the user chat list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf10d2154fbd6c7ff9c77c42f4e073541a2aaf095</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443030649</time>
+		<author_id>22</author_id>
+		<summary>Revert debugging changes.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c424126c4f6be0c6e6e421e4a3264730897caa450</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443032731</time>
+		<author_id>22</author_id>
+		<summary>Set the avatar icon in the message list of a chat to be 30x30px.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cf99402e4186c733dd578c6c0a000b5370eb38b74</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443033308</time>
+		<author_id>22</author_id>
+		<summary>Make the chat participants list stick out and set a circling border around the author's avatar in the chat's message list.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>caf0a4ffebf15b4ab326d641938f90134cb2b05df</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443299906</time>
+		<author_id>22</author_id>
+		<summary>Clean up code.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cda41c47c654242df36d7633c519afffaba6a47ba</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443451463</time>
+		<author_id>22</author_id>
+		<summary>Update the JavaScript documentation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>cff0003a92dc8577157737705576e4baca79adcbc</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443558022</time>
+		<author_id>22</author_id>
+		<summary>Review the documentation.</summary>
+		<description></description>
+		<tags>app</tags>
+	</ROW>
+
+	<ROW>
+		<id>c3f17e198815df0b1aaa7c453576a9192fb59e306</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443897637</time>
+		<author_id>1</author_id>
+		<summary>Commit application index files.</summary>
+		<description></description>
+		<tags>index</tags>
+	</ROW>
+
+	<ROW>
+		<id>c32112133767002eac5944f9ced5deee2f0892760</id>
+		<project_id>61</project_id>
+		<branch_name>master</branch_name>
+		<parent>0</parent>
+		<time>1443898604</time>
+		<author_id>1</author_id>
+		<summary>Fixing dependency bugs in many classes.</summary>
+		<description></description>
+		<tags>dependencies</tags>
+	</ROW>
+</DATA>
